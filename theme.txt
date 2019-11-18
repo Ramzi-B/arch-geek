@@ -1,0 +1,109 @@
+# GRUB2 THEME
+# by Hackawax
+
+
+# Settings
+desktop-image: "bluegeek.png"
+title-text: "KEEP IT SIMPLE STUPID"
+title-color: "#1793D1"
+title-font: "Terminus 18 B"
+
+terminal-box: "terminal_*.png"
+terminal-font: "Terminal 10"
+
+message-font: "Terminus 10"
+message-color: "#1793D1"
+message-bg-color: "#333"
+
+# Boot menu
++ boot_menu 
+{    
+    top = 40% 
+    left = 10%
+    width = 60%
+    height = 50%
+    
+    item_font = "Terminus 10"
+    selected_item_font = "Terminus 10"
+    item_color = "#333"
+    selected_item_color = "#1793D1"
+
+    item_height = 30
+    item_padding = 10
+    item_spacing = 2
+
+    icon_width = 24
+    icon_height = 24
+    item_icon_space = 15
+
+}
+
+# Logo and circular progress
++ circular_progress 
+{    
+    id ="__timeout__"
+    top = 68%
+    left = 62%
+    num_ticks = 24
+    width = 130
+    height = 130
+    center_bitmap = "center.png"
+    tick_bitmap = "tick.png"
+    ticks_disappear = false 
+}
+
+# Show an informational message
++ hbox
+{
+    top = 100%-35
+    left = 10% 
+
+    + label
+    {
+        text = "Enter: "
+        font = "Terminus 8"
+        color = "#1793D1"
+        align = "left"
+    }
+
+    + label
+    {
+        text = "Boot "
+        font = "Terminus 8"
+        color = "#333"
+        align = "left"
+    }
+
+    + label
+    {
+        text = "E: "
+        font = "Terminus 8"
+        color = "#1793D1"
+        align = "left"
+    }
+
+    + label
+    {
+        text = "Options "
+        font = "Terminus 8"
+        color = "#333"
+        align = "left"
+    }
+
+    + label
+    {
+        text = "C: "
+        font = "Terminus 8"
+        color = "#1793D1"
+        align = "left"
+    }
+
+
+    + label
+    {
+        text = "CMD-Line"
+        font = "Terminus 8"
+        color = "#333"
+        align = "left"
+    }
+}
